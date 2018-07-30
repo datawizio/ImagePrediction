@@ -18,7 +18,33 @@ parser.add_argument(
       help='Path to folders of labeled images.'
   )
 ```
-Also you can tune some parameters such as number of training steps, learning rate. Aditionaly you can specify what part of your dataset you want use for validation and testing.For more information look retrain.py.
+Also you can tune some parameters such as number of training steps, learning rate. Aditionaly you can specify what part of your dataset you want use for validation and testing.For more information look at retrain.py.
+```python
+parser.add_argument(
+      '--how_many_training_steps',
+      type=int,
+      default=30000,
+      help='How many training steps to run before ending.'
+  )
+  parser.add_argument(
+      '--learning_rate',
+      type=float,
+      default=0.0001,
+      help='How large a learning rate to use when training.'
+  )
+  parser.add_argument(
+      '--testing_percentage',
+      type=int,
+      default=2,
+      help='What percentage of images to use as a test set.'
+  )
+  parser.add_argument(
+      '--validation_percentage',
+      type=int,
+      default=2,
+      help='What percentage of images to use as a validation set.'
+  )
+```
 ### After you have specified all the necessary parameters, you can start model training by running it at the command prompt:
 ```bash
 :~$ python retrain.py
