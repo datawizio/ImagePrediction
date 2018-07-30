@@ -49,7 +49,7 @@ parser.add_argument(
 ```bash
 :~$ python retrain.py
 ```
-### When your model is being trained you will have two files in tmp/, it is output_labels.txt(contains class names) and output_graph.pb(it is your model). Now you are ready to use it.
+#### When your model is being trained you will have two files in tmp/, it is output_labels.txt(contains class names) and output_graph.pb(it is your model). Now you are ready to use it.
 ## Making predictions with make_predections.py.
 ### Specify path to data, which you want to classify.
 ```python
