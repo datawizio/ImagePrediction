@@ -44,15 +44,15 @@ def load_graph(filename):
         graph_def.ParseFromString(f.read())
         tf.import_graph_def(graph_def, name='')
 
-data_root='dataset/'
+data_root = 'dataset/'
 
-src=data_root+ 'test/from-internet/'
+src= data_root + 'test/from-internet/'
 
-labels='few_prod_model/output_labels.txt'
-graph='few_prod_model/output_graph.pb'
+labels = 'tmp/output_labels.txt'
+graph = 'tmp/output_graph.pb'
 
-input_layer='Mul:0'
-output_layer='final_result:0'
+input_layer = 'Mul:0'
+output_layer ='final_result:0'
 
 load_graph(graph)
 
