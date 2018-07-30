@@ -45,31 +45,33 @@ parser.add_argument(
       help='What percentage of images to use as a validation set.'
   )
 ```
-### After you have specified all the necessary parameters, you can start model training by running it at the command prompt:
+### After you have specified all the necessary parameters, you can start training your model by running it retrain.py from the command prompt:
 ```bash
 :~$ python retrain.py
 ```
-## When your model is being trained you will have two files in tmp/, it is output_labels.txt(contains class names) and output_graph.pb(it is your model). Now you are ready to use it.
-### Making predictions with make_predections.py.
-## Specify path to data, which you want to classify.
+### When your model is being trained you will have two files in tmp/, it is output_labels.txt(contains class names) and output_graph.pb(it is your model). Now you are ready to use it.
+## Making predictions with make_predections.py.
+### Specify path to data, which you want to classify.
 ```python
 data_root = 'dataset/'
 src= data_root + 'test/new_imgs/'
 
 ```
-## Specify path to your model(*.pb file) and path to file which contains the class names(output_labels.txt).
+### Specify path to your model(*.pb file) and path to file which contains the class names(output_labels.txt).
 ```python
 labels = 'tmp/output_labels.txt'
 graph = 'tmp/output_graph.pb'
 
 ```
-## Specify names of input and output layers.(If you didnt edit stracture of network you dont need this step)
+
+### Specify names of input and output layers.(If you didnt edit stracture of network you dont need this step)
 ```python
 input_layer = 'Mul:0'
 output_layer ='final_result:0'
 
 ```
-## If you done these step you can make predictions by running it at the command prompt:
+
+### If you done these step you can make predictions by running make_predictions.py from the command prompt:
 ```bash
 :~$ python make_predections.py
 ```
