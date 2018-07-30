@@ -1,0 +1,26 @@
+# Inception v3 transfer-learning
+
+This folder contains an example of transfer-learning the Inception v3 model for classification images utilizing TensorFlow.
+
+[what is transfer-learning](https://becominghuman.ai/transfer-learning-retraining-inception-v3-for-custom-image-classification-2820f653c557)
+
+# Dependencies:
+- Python 3.6
+- Tensorflow 1.7 (TOCO will not work with 1.8 so be sure that you install Tensorflow 1.70
+
+## What you need to start training your model?
+Firstly, you should specify where is your dataset, to do this you just need edit retrain.py on 1152 row.
+```python
+parser.add_argument(
+      '--image_dir',
+      type=str,
+      default='<PATH-TO-YOUR-DATASET>',
+      help='Path to folders of labeled images.'
+  )
+```
+Also you can tune some parameters such as number of training steps, learning rate. Aditionaly you can specify what part of your dataset you want use for validation and testing.For more information look retrain.py.
+### After you have specified all the necessary parameters, you can start model training by running it at the command prompt:
+```bash
+:~$ python retrain.py
+```
+## When your model is being trained you will have two files in tmp/, it is output_labels.txt(contains class names) and output_graph.pb(it is your model). Now you are ready to use it.
