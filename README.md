@@ -4,8 +4,8 @@ This folder contains an example of transfer-learning the Inception v3 model for 
 
 [how it looks](https://becominghuman.ai/transfer-learning-retraining-inception-v3-for-custom-image-classification-2820f653c557)
 
-# Files
--android - Android app
+# Files:
+-android - Android app  
 -Inception-v3-model - here we train Inception v3 model and can make predictions
 
 # Usege
