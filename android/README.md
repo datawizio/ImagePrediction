@@ -2,7 +2,7 @@
 
 This folder contains an example application utilizing TensorFlow for Android devices.
 
-[how does it works](https://drive.google.com/file/d/1iFMeif-MxjI4LY0VwZClKAPF4RO2NfrT/view)
+[how does it works](https://youtu.be/Cp-GVpLy7OM)
 
 # Dependencies:
 - Python 3.6

@@ -2,7 +2,7 @@
 
 This folder contains an example of transfer-learning the Inception v3 model for classification images utilizing TensorFlow and deploying it on Android.
 
-[how it looks](https://becominghuman.ai/transfer-learning-retraining-inception-v3-for-custom-image-classification-2820f653c557)
+[How it looks](https://youtu.be/Cp-GVpLy7OM)
 
 # Files:
 - android - Android app.  
